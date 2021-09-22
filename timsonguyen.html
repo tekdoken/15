@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script> //cách1
+let b = +prompt();
+alert(isPrime(b))
+
+function isPrime(number) {
+    if (number < 2) return false;
+    for (let i = 2; i < number; i++) {
+        if (number % i == 0) {
+            return false;
+        }
+    }
+    return true;
+}
+
+//cách 2 đang thử nghiệm
+// let b = +prompt();
+// isPrime(b)
+// function isPrime(number) {
+//     if (number < 2) alert('ko phải snt');
+//     for (let i = 2; i < number; i++) {
+//         if (number % i == 0) {
+//             alert('ko phải snt');
+//         }
+//     }
+//     alert(b + ' là snt');
+// }
+</script>
+</body>
+</html>
