@@ -6,29 +6,29 @@
 </head>
 <body>
 <script>
-    //cánh 1
-    let c=+prompt('số 1')
-    let v=+prompt('số 2')
-    let result =ddd(c,v);
-    alert(result);
-    function ddd(a,b){
-        if (a>b){
-           return a+' lớn hơn '+b
-        }else{
-           return a+b
-        }
-    }
-    //cách 2
+    // //cánh 1
     // let c=+prompt('số 1')
     // let v=+prompt('số 2')
     // let result =ddd(c,v);
+    // alert(result);
     // function ddd(a,b){
     //     if (a>b){
-    //         alert( a+' lớn hơn '+b)
+    //        return a+' lớn hơn '+b
     //     }else{
-    //         alert( a+b)
+    //        return a+b
     //     }
     // }
+    // cách 2
+    let c=+prompt('số 1')
+    let v=+prompt('số 2')
+    let result =ddd(c,v);
+    function ddd(a,b){
+        if (a>b){
+            alert( a+' lớn hơn '+b)
+        }else{
+            alert( a+b)
+        }
+    }
 </script>
 </body>
 </html>
