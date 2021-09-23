@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    for (let n=2;n<1000;n++){
+        isPrime(n)
+        function isPrime(num) {
+            for (let i = 2; i * i <= num; i++){
+                if (num % i === 0)
+                    return false;}
+        }if (isPrime(n)!=false){
+            document.write(n+'<br>')
+        }
+    }
+</script>
+</body>
+</html>

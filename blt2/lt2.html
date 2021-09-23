@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="t" type="text" placeholder="nhập Bán kính hình tròn">
+<button onclick="dt()">diện tích hình tròn</button>
+<button onclick="cv()">chu vi hình tròn</button>
+<p id="d"></p>
+<script>
+    function dt() {
+        let feet = document.getElementById('t').value
+        document.getElementById("d").innerHTML = 3.14 * (feet**2);
+    }
+    function cv() {
+        let meter = document.getElementById('t').value
+        document.getElementById("d").innerHTML = 3.14 * (2*meter);
+    }
+</script>
+</body>
+</html>
