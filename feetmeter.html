@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="t" type="text">
+<button onclick="mf()">chuyển sang feet</button>
+<button onclick="fm()">chuyển sang meter</button>
+<p id="d"></p>
+<script>
+    function fm() {
+        let meter = document.getElementById('t').value
+        document.getElementById("d").innerHTML = 0.305 * meter;
+    }
+    function mf() {
+        let feet = document.getElementById('t').value
+        document.getElementById("d").innerHTML = 3.279 * feet;
+    }
+</script>
+</body>
+</html>
