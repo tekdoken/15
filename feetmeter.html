@@ -5,6 +5,19 @@
     <title>Title</title>
 </head>
 <body>
-
+<input id="t" type="text">
+<button onclick="mf()">chuyển sang feet</button>
+<button onclick="fm()">chuyển sang meter</button>
+<p id="d"></p>
+<script>
+    function fm() {
+        let feet = document.getElementById('t').value
+        document.getElementById("d").innerHTML = 0.305 * feet;
+    }
+    function mf() {
+        let meter = document.getElementById('t').value
+        document.getElementById("d").innerHTML = 3.279 * meter;
+    }
+</script>
 </body>
 </html>
